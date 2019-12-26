@@ -33,6 +33,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Controller implements Initializable{
 
+//Что то поменялось
 
     @FXML
     MediaView Video;
