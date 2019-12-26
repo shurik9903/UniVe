@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AncorlevelEditor" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #8B4513;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ScrollPane layoutY="40.0" prefHeight="560.0" prefWidth="600.0">
+         <content>
+          <AnchorPane fx:id="ScrollAnchor" minHeight="0.0" minWidth="0.0" prefHeight="560.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+               <children>
+                  <Button fx:id="BAGH" layoutX="400.0" layoutY="131.0" mnemonicParsing="false" onAction="#AddGridHorizontal" prefHeight="39.0" prefWidth="39.0" text="+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BAGV" layoutX="131.0" layoutY="400.0" mnemonicParsing="false" onAction="#AddGridVertical" prefHeight="39.0" prefWidth="39.0" text="+">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BRGH" layoutX="439.0" layoutY="131.0" mnemonicParsing="false" onAction="#RemoveGridHorizontal" prefHeight="39.0" prefWidth="39.0" text="-">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="BRGV" layoutX="131.0" layoutY="439.0" mnemonicParsing="false" onAction="#RemoveGridVertical" prefHeight="39.0" prefWidth="39.0" text="-">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <HBox fx:id="HGrid" prefHeight="400.0" prefWidth="400.0" />
+                  <ImageView fx:id="Hero" fitHeight="100.0" fitWidth="100.0" onMouseDragged="#HeroDragged" onMousePressed="#HeroPressed" onMouseReleased="#HeroReleased" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Picture/LevelPieces/Hero.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </content></ScrollPane>
+      <Pane prefHeight="40.0" prefWidth="600.0" style="-fx-border-color: #008000; -fx-background-color: #FFFFFF;">
+         <children>
+            <Button fx:id="BMenu" layoutX="8.0" layoutY="5.0" mnemonicParsing="false" onAction="#ClickMenu" text="Меню">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="74.0" layoutY="5.0" mnemonicParsing="false" onAction="#TestinglevelButton" text="Тестирование">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="190.0" layoutY="5.0" mnemonicParsing="false" text="Информация">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="ViewBut" layoutX="300.0" layoutY="5.0" mnemonicParsing="false" onAction="#ChangeView" text="Вид: стандартный">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Pane layoutX="600.0" prefHeight="40.0" prefWidth="200.0" style="-fx-border-color: #008000; -fx-background-color: #FFFFFF;">
+         <children>
+            <Label layoutX="72.0" layoutY="5.0" text="Блоки">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <ScrollPane fx:id="ScrollPaneField" layoutX="600.0" layoutY="80.0" prefHeight="520.0" prefViewportWidth="100.0" prefWidth="200.0">
+        <content>
+          <AnchorPane fx:id="AnchorPaneField" minHeight="0.0" minWidth="0.0" prefHeight="991.0" prefWidth="180.0">
+               <children>
+                  <VBox fx:id="VBoxField" alignment="TOP_CENTER" layoutX="43.0" layoutY="10.0" prefHeight="500.0" prefWidth="100.0" spacing="20.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <AnchorPane fx:id="AnchorMenuWindow" layoutY="39.0" prefHeight="139.0" prefWidth="189.0" style="-fx-background-color: #008000;" visible="false">
+         <children>
+            <Pane layoutX="10.0" layoutY="8.0" prefHeight="119.0" prefWidth="170.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Button layoutX="-6.0" layoutY="-1.0" mnemonicParsing="false" onAction="#HideMenuLevel" prefHeight="22.0" prefWidth="182.0" style="-fx-background-color: #008000; -fx-border-color: #FFFFFF; -fx-border-radius: 20; -fx-border-width: 3;" text="^" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" />
+                  <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#SaveLevelButton" prefHeight="30.0" prefWidth="150.0" text="Сохранить" />
+                  <Button layoutX="10.0" layoutY="77.0" mnemonicParsing="false" onAction="#ExitLevel" prefHeight="30.0" prefWidth="150.0" text="Выход в меню" />
+               </children></Pane>
+         </children></AnchorPane>
+      <Pane layoutX="600.0" layoutY="40.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: FFFFFF#008000; -fx-border-color: #008000;">
+         <children>
+            <ComboBox fx:id="BlockType" layoutX="14.0" layoutY="4.0" onAction="#BlockTypeAction" prefHeight="30.0" prefWidth="170.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

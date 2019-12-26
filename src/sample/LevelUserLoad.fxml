@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="49.0" prefWidth="500.0" style="-fx-background-color: #008000;">
+         <children>
+            <Label layoutX="150.0" layoutY="7.0" text="Выбор уровня" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ImageB3" fitHeight="44.0" fitWidth="95.0" layoutX="388.0" layoutY="2.0" onMouseClicked="#PlayImage" onMouseEntered="#ImageButton" onMouseExited="#ImageButton" onMousePressed="#ImageButton" onMouseReleased="#ImageButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Picture/Base/Назад(off).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ComboBox fx:id="LevelUserComboBox" layoutX="14.0" layoutY="60.0" prefHeight="35.0" prefWidth="345.0" promptText="Выберите уровень..." visibleRowCount="6" />
+      <Button layoutX="376.0" layoutY="63.0" mnemonicParsing="false" onAction="#LoadLevel" prefHeight="30.0" prefWidth="110.0" text="Загрузить">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

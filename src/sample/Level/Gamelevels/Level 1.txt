@@ -1,0 +1,27 @@
+Dungeon programming: Level 1
+-
+Horizontal number: 
+6
+Vertical number: 
+5
+-
+W_96|W_96|W_96|W_96|W_96|W_96|F_127|F_127|F_127|W_96|W_96|F_127|F_127|F_127|W_96|W_96|F_127|F_127|F_127|W_96|W_96|F_127|T_1|F_127|W_96|W_96|W_96|W_96|W_96|W_96|
+-
+BHorizontal: 
+600.0
+BVertical: 
+500.0
+Scroll: 
+800.0
+660.0
+-
+Hero:
+X
+100.0
+Y
+200.0
+-
+LevelComplete: 
+true
+
+0|0|0|0|0|0|1|1|1|0|0|1|1|1|0|0|1|1|1|0|0|1|2|1|0|0|0|0|0|0|

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="200.0" prefWidth="598.0" style="-fx-background-color: #008000;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="50.0" prefWidth="623.0" style="-fx-background-color: #8B4513;">
+         <children>
+            <Label layoutX="14.0" layoutY="3.0" text="Настройки">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ImageB3" fitHeight="44.0" fitWidth="95.0" layoutX="525.0" layoutY="4.0" onMouseClicked="#MainWindowOpen" onMouseEntered="#ImageButton" onMouseExited="#ImageButton" onMousePressed="#ImageButton" onMouseReleased="#ImageButton" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Picture/Base/Назад(off).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="77.0" text="Громкость звуков" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="121.0" text="Громкость музыки" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Slider layoutX="201.0" layoutY="76.0" prefHeight="35.0" prefWidth="399.0" showTickLabels="true" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" value="100.0" />
+      <Slider layoutX="201.0" layoutY="120.0" prefHeight="30.0" prefWidth="399.0" showTickLabels="true" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000;" value="100.0" />
+   </children>
+</AnchorPane>

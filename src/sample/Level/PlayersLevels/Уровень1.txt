@@ -1,0 +1,27 @@
+Dungeon programming: Уровень1
+-
+Horizontal number: 
+4
+Vertical number: 
+4
+-
+F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|F_1|
+-
+BHorizontal: 
+400.0
+BVertical: 
+400.0
+Scroll: 
+600.0
+560.0
+-
+Hero:
+X
+0.0
+Y
+100.0
+-
+LevelComplete: 
+true
+
+1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|1|
